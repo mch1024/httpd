@@ -3,7 +3,5 @@ services:
     domain: ${DOMAIN}
     image: httpd
     port: 80
-  web-https:
-    domain: ${DOMAIN}
-    image: httpd
-    port: 443
+    scale:
+      count: 2
